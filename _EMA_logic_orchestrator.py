@@ -13,7 +13,7 @@
 #    GEMINI_API_KEY=your_actual_api_key_here
 #
 # 4. Run the script:
-#    EMA_logic_orchestrator.py
+#   python _EMA_logic_orchestrator.py
 # ==============================================================================
 # ==============================================================================
 # EMA LOGIC ORCHESTRATOR (July-2025)
