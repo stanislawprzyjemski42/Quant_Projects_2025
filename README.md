@@ -1,6 +1,7 @@
 # Quantitative Systems & Computational Logic (2025) 🚀
 
 Welcome — this repository is a personal collection of some quantitative finance projects and experiments built between May and December 2025 made in January mainly to showcase my quant projects.  
+
 My goal: learn by doing — implement math, build end-to-end Python systems, experiment with C++ numerical engines, and improve programming skills to analize the market better before I make investment decisons.  
 This repo showcases my projects; it’s educational and experimental, not production trading software.
 
