@@ -36,25 +36,25 @@ These are learning artifacts and experiments — not investment recommendations 
 
 All files present in this repo and short descriptions:
 
-- `_basic_quant_system.py` 🧭  
+- `_basic_quant_system.py`  
   Streamlined quantitative analysis system. Implements 20 essential features (returns, vol, RSI, MACD, MAs, Sharpe/Sortino, momentum), an ML ensemble (RandomForest, LightGBM, GradientBoosting), an interactive CLI, composite scoring and optional LLM/Gemini insights.
 
-- `_machine_learning_price_forecasting.py` 🤖  
+- `_machine_learning_price_forecasting.py` 
   ML-focused price forecasting experiments: feature pipelines, preprocessing and model experiments intended for backtesting/idea exploration.
 
-- `_statistical_alpha_factor_engineering_system.py` 🧪  
+- `_statistical_alpha_factor_engineering_system.py` 
   Tools for factor engineering, statistical alpha construction, cross-sectional tests and evaluation utilities.
 
-- `_the_full_quantatative_program.py` 🧩  
+- `_the_full_quantatative_program.py` 
   Larger integrated script that ties ingestion, analytics, ML, and reporting into a more feature-rich pipeline — useful to see how components compose.
 
-- `_EMA_logic_orchestrator.py` ⚙️  
+- `_EMA_logic_orchestrator.py` 
   Example orchestration around EMA-based signals and execution-flow demo.
 
-- `_option_pricing_engine2.cpp` 🔧  
+- `_option_pricing_engine2.cpp`  
   C++ experiment implementing Black–Scholes formulas, Greeks and small harnesses to test numerical stability.
 
-- `_cpp_option_pricer.cpp` 🔧  
+- `_cpp_option_pricer.cpp`  
   Additional C++ testing/pricing harness — used to explore performance and input validation.
 
 - `README.md` — this file 📘
