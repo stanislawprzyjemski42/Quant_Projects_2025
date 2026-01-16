@@ -15,7 +15,7 @@ This repo showcases my projects; it’s educational and experimental, not produc
 - How to run
 - Data & environment notes
 - Disclaimers (please read) ⚠️
-- Acknowledgements & references 🙏
+- Acknowledgements & references 
 - Contact
 
 ---
@@ -157,7 +157,7 @@ Short legal clarity: It does not guarantee profits, returns, or accuracy — use
 
 ---
 
-## Acknowledgements & references 🙏
+## Acknowledgements & references 
 
 I used many tutorials, community resources, and open-source examples while building these projects (notably Quantecon and other community tutorials and docs). I acknowledge that those materials were important in helping me create these projects. I accept the use of those resources as background and have adapted the ideas into original code here; nothing in this repo is intended to misrepresent others' work. This is an acknowledgement of influence rather than a request for thanks — please consider the original resources for license and reuse terms if you plan to copy their material directly.
 
