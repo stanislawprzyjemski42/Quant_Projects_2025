@@ -12,7 +12,7 @@ Setup (Windows PowerShell):
     $env:ALPHA_VANTAGE_KEY="your_key"
 
 Usage:
-    python _improved_quant.py AAPL MSFT GOOGL
+    python _the_full_quantatative_program.py AAPL MSFT GOOGL
 """
 
 import sys
