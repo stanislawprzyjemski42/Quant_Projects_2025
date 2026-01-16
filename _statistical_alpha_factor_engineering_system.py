@@ -2,7 +2,7 @@
 ================================================================================
 STATISTICAL ALPHA FACTOR ENGINEERING SYSTEM
 ================================================================================
-Author: Stanisław Przyjemski
+Author:@stanislawprzyjemski42
 Purpose:Testing out math and finance equacions in Python on real market data.
 Domain: Quantitative Finance & Statistical Signal Processing
 
