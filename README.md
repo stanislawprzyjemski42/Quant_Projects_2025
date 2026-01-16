@@ -1,7 +1,291 @@
-📈 Streamlined Quantitative Stock Trading SystemA professional-grade quantitative stock analysis engine designed for personal traders. This system integrates 20 essential quantitative features, a triple-model Machine Learning ensemble, and LLM-powered qualitative insights to provide a holistic "Buy/Hold/Sell" framework.🚀 Key Features1. Core Metrics Engine (The 20 Essentials)The system calculates 20 critical data points for every ticker, categorized into:Returns & Price Action: Log returns, 1-month and 3-month momentum.Volatility Measures: Annualized, 20-day rolling, and realized volatility.Technical Indicators: RSI, MACD (Signal/Trend), and Moving Average crossovers (20/50/200).Risk-Adjusted Returns: Sharpe Ratio, Sortino Ratio, and Maximum Drawdown.Statistical Moments: Skewness and Kurtosis of return distributions.2. Fundamental & Quality ScoringBeyond price action, the system evaluates the "health" of a company:Value: P/E, Forward P/E, PEG, and Price-to-Book.Profitability: ROE, ROA, and Profit Margins.Health: Debt-to-Equity and Current Ratios.Quality Score: A proprietary 0-100 score based on financial stability and growth.3. ML Prediction EnsembleThe system trains three distinct models on historical data to predict 5-day forward price action:Random Forest: Captures non-linear relationships.LightGBM: Efficient gradient boosting for trend detection.Gradient Boosting (SKLearn): Provides robust ensemble stability.Output: A "Bullish Probability" percentage and an Ensemble Accuracy metric.4. AI-Powered InsightsIntegrates with Google Gemini 2.0 Flash to interpret quantitative reports into plain-English investment theses, highlighting risks and suggesting portfolio allocations.🛠️ Tech StackData: yfinance (Market data & Fundamentals)Analysis: pandas, numpyMachine Learning: scikit-learn, lightgbmAI/LLM: google-genaiTerminal UI: colorama (Color-coded terminal output)💻 Installation & SetupClone the repository:Bashgit clone https://github.com/yourusername/quant-trading-system.git
-cd quant-trading-system
-Install dependencies:Bashpip install pandas numpy yfinance scikit-learn lightgbm colorama python-dotenv google-genai
-Configure Environment:Create a .env file in the root directory and add your Gemini API key:Fragment koduGEMINI_API_KEY=your_api_key_here
-📖 UsageThe system supports two modes of operation:Interactive ModeRun the script without arguments to enter the command console:Bashpython streamlined_quant_system.py
-analyze AAPL TSLA NVDA: Performs deep dive on specific tickers.compare AAPL MSFT: Side-by-side comparison of two stocks.insights: Generates the AI summary of your current results.export: Saves all data to analysis_results.csv.Command Line ModeQuickly analyze a list of stocks from the terminal:Bashpython streamlined_quant_system.py AAPL GOOGL META
-📊 Methodology: The Composite ScoreThe system assigns a final Composite Score (0-100) to determine recommendations:ScoreRecommendationWeighting Component75+🟢 Strong Buy40% Technical Momentum65 - 74🟢 Buy30% Risk-Adjusted Returns (Sharpe)50 - 64🟡 Hold20% Fundamental Quality Score40 - 49🔴 Sell10% ML Ensemble Confidence< 40🔴 Strong Sell⚠️ DisclaimerThis software is for educational and research purposes only. Quantitative trading involves significant risk. The authors are not financial advisors. Always perform your own due diligence before making investment decisions. Past performance (including ML backtesting) is not indicative of future results.
+📈 Streamlined Quantitative Trading System
+20-Feature Core Engine | ML Ensemble | LLM Insights
+A professional-grade quantitative analysis tool designed to bridge the gap between raw data and actionable trading intelligence. This system combines traditional Quantitative Finance, Machine Learning Ensemble models, and Generative AI to provide a 360-degree view of market opportunities.
+🚀 Key Features
+1. The 20-Feature Core Engine
+The system extracts 20 essential quantitative metrics for any ticker, categorized into four dimensions:
+Momentum & Trend: RSI, MACD Signal, and Multi-window price changes.
+Volatility Analysis: Annualized Volatility, 20-Day Rolling Vol, and Realized Volatility.
+Moving Averages: Golden/Death Cross detection using 20, 50, and 200-day windows.
+Statistical Moments: Analysis of Skewness and Kurtosis in return distributions.
+
+2. Machine Learning Ensemble
+The system trains three distinct models on 2 years of historical data to predict 5-day forward price action:
+Random Forest Classifier: For non-linear pattern recognition.
+LightGBM: For gradient-boosted decision tree efficiency.
+Gradient Boosting (SKLearn): To ensure robust statistical stability.
+
+3. AI-Powered Insights
+Integrates with Google Gemini 2.0 Flash to interpret quantitative reports into plain-English investment theses, highlighting risks and suggesting portfolio allocations.
+🛠️ Installation & Setup
+Prerequisites
+Python 3.9 or higher
+A Google Gemini API Key
+
+Installation
+Clone the Repository:
+
+Bash
+Plain text
+ANTLR4
+Bash
+C
+C#
+CSS
+CoffeeScript
+CMake
+Dart
+Django
+Docker
+EJS
+Erlang
+Git
+Go
+GraphQL
+Groovy
+HTML
+Java
+JavaScript
+JSON
+JSX
+Kotlin
+LaTeX
+Less
+Lua
+Makefile
+Markdown
+MATLAB
+Markup
+Objective-C
+Perl
+PHP
+PowerShell
+.properties
+Protocol Buffers
+Python
+R
+Ruby
+Sass (Sass)
+Sass (Scss)
+Scheme
+SQL
+Shell
+Swift
+SVG
+TSX
+TypeScript
+WebAssembly
+YAML
+XML
+
+git clone https://github.com/your-username/streamlined-quant-system.git
+cd streamlined-quant-system
+
+
+
+Install Dependencies:
+
+Bash
+Plain text
+ANTLR4
+Bash
+C
+C#
+CSS
+CoffeeScript
+CMake
+Dart
+Django
+Docker
+EJS
+Erlang
+Git
+Go
+GraphQL
+Groovy
+HTML
+Java
+JavaScript
+JSON
+JSX
+Kotlin
+LaTeX
+Less
+Lua
+Makefile
+Markdown
+MATLAB
+Markup
+Objective-C
+Perl
+PHP
+PowerShell
+.properties
+Protocol Buffers
+Python
+R
+Ruby
+Sass (Sass)
+Sass (Scss)
+Scheme
+SQL
+Shell
+Swift
+SVG
+TSX
+TypeScript
+WebAssembly
+YAML
+XML
+
+pip install yfinance pandas numpy scikit-learn lightgbm colorama python-dotenv google-genai
+
+
+
+Create a .env file in the root folder:
+
+Fragment kodu
+Plain text
+ANTLR4
+Bash
+C
+C#
+CSS
+CoffeeScript
+CMake
+Dart
+Django
+Docker
+EJS
+Erlang
+Git
+Go
+GraphQL
+Groovy
+HTML
+Java
+JavaScript
+JSON
+JSX
+Kotlin
+LaTeX
+Less
+Lua
+Makefile
+Markdown
+MATLAB
+Markup
+Objective-C
+Perl
+PHP
+PowerShell
+.properties
+Protocol Buffers
+Python
+R
+Ruby
+Sass (Sass)
+Sass (Scss)
+Scheme
+SQL
+Shell
+Swift
+SVG
+TSX
+TypeScript
+WebAssembly
+YAML
+XML
+
+GEMINI_API_KEY=your_api_key_here
+
+
+
+📖 Usage Guide
+Launching Interactive Mode
+Bash
+Plain text
+ANTLR4
+Bash
+C
+C#
+CSS
+CoffeeScript
+CMake
+Dart
+Django
+Docker
+EJS
+Erlang
+Git
+Go
+GraphQL
+Groovy
+HTML
+Java
+JavaScript
+JSON
+JSX
+Kotlin
+LaTeX
+Less
+Lua
+Makefile
+Markdown
+MATLAB
+Markup
+Objective-C
+Perl
+PHP
+PowerShell
+.properties
+Protocol Buffers
+Python
+R
+Ruby
+Sass (Sass)
+Sass (Scss)
+Scheme
+SQL
+Shell
+Swift
+SVG
+TSX
+TypeScript
+WebAssembly
+YAML
+XML
+
+python streamlined_quant_system.py
+
+
+
+Common Commands
+analyze AAPL NVDA TSLA: Deep-dive analysis of specific tickers.
+compare AAPL MSFT: Side-by-side quantitative comparison.
+insights: Generates an AI-powered narrative of your current watch list.
+export: Saves all processed metrics to analysis_results.csv.
+
+⚖️ The Composite Scoring Model
+The recommendation engine uses a weighted model to generate a score from 0-100:
+WeightCategoryDescription40%Technical StrengthBased on Momentum Score (RSI, MACD, MA).30%Risk-Adjusted ReturnsDriven by Sharpe Ratio performance.20%Quality ScoreFundamental health (ROE, Debt/Equity, P/E).10%ML ConfidenceProbability of bullish movement from the ensemble.
+Recommendation Scale
+75+: 🟢 STRONG BUY
+65-74: 🟢 BUY
+50-64: 🟡 HOLD
+40-49: 🔴 SELL
+< 40: 🔴 STRONG SELL
+
+🧪 Mathematical Indicators
+The system calculates risk-adjusted performance using standard quantitative formulas:
+Sharpe Ratio
+
+
+$$Sharpe = \frac{R_p - R_f}{\sigma_p}$$
+Sortino Ratio
+
+
+$$Sortino = \frac{R_p - R_f}{\sigma_{down}}$$
+⚠️ Disclaimer
+For Research Purposes Only. Quantitative trading involves significant risk. The "Recommendations" provided by this system are generated by algorithms and should not be considered financial advice. Always perform your own due diligence.
+
