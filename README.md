@@ -1,7 +1,7 @@
 # Quantitative Systems & Computational Logic (2025) 🚀
 
-Welcome — this repository is a personal collection of quantitative finance projects and experiments built between May and December 2025.  
-My goal: learn by doing — implement math, build end-to-end Python systems, experiment with C++ numerical engines, and improve programming skills as I began investing.  
+Welcome — this repository is a personal collection of some quantitative finance projects and experiments built between May and December 2025 made in January mainly to showcase my quant projects.  
+My goal: learn by doing — implement math, build end-to-end Python systems, experiment with C++ numerical engines, and improve programming skills to analize the market better before I make investment decisons.  
 This repo showcases my projects; it’s educational and experimental, not production trading software.
 
 ---
@@ -135,7 +135,7 @@ Most scripts print usage or help when run with `-h` or without required argument
 
 ## Data & environment notes 🗂️
 
-- By default Python scripts use `yfinance` to fetch historical data. You can adapt ingestion to local CSVs if preferred.
+- By default Python scripts use `yfinance` to fetch historical data. You can adapt ingestion to local CSVs if preferred. In some projects FRED and AphaVantage API keys are used to get open source economic data to improve the AI systems market data contex.
 - Optional LLM insights: set `GEMINI_API_KEY` (or relevant API key) in a `.env` file or environment variable to enable Gemini/LLM integration:
 ```
 GEMINI_API_KEY=your_api_key_here
@@ -152,7 +152,7 @@ GEMINI_API_KEY=your_api_key_here
 - No guarantees: these systems do NOT guarantee returns or any specific performance. Past results and backtests are not predictive of future outcomes.
 - Use at your own risk: I am not responsible for any losses. If you plan to use or adapt this code for live trading, do rigorous testing, risk-management checks, and consult qualified professionals.
 
-Short legal clarity: I do not guarantee profits, returns, or accuracy — use responsibly.
+Short legal clarity: It does not guarantee profits, returns, or accuracy — use responsibly.
 
 ---
 
@@ -188,5 +188,3 @@ Owner: @stanislawprzyjemski42
 If you have suggestions, corrections, or collaboration ideas, please open an issue or a pull request. I appreciate constructive feedback.
 
 ---
-
-Happy learning and safe experiments! 🚀
