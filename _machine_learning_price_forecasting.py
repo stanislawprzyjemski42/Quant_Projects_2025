@@ -2,7 +2,7 @@
 ================================================================================
 MACHINE LEARNING PRICE FORECASTING WITH MONTE CARLO SIMULATION
 ================================================================================
-Author: Stanisław Przyjemski
+Author:@stanislawprzyjemski42
 Date: September 2025
 Project Type: Pre-built Model Implementation for Financial Markets
 Domain: Machine Learning & Stochastic Modeling
