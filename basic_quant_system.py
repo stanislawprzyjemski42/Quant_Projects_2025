@@ -1,4 +1,4 @@
-# streamlined_quant_system.py
+# basic_quant_system.py
 """
 Streamlined Quantitative Stock Trading System
 20 Essential Features | ML Ensemble | LLM Insights | Personal Trading Focus
