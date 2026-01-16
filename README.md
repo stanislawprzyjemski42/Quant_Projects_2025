@@ -1,291 +1,100 @@
-📈 Streamlined Quantitative Trading System
-20-Feature Core Engine | ML Ensemble | LLM Insights
-A professional-grade quantitative analysis tool designed to bridge the gap between raw data and actionable trading intelligence. This system combines traditional Quantitative Finance, Machine Learning Ensemble models, and Generative AI to provide a 360-degree view of market opportunities.
-🚀 Key Features
-1. The 20-Feature Core Engine
-The system extracts 20 essential quantitative metrics for any ticker, categorized into four dimensions:
-Momentum & Trend: RSI, MACD Signal, and Multi-window price changes.
-Volatility Analysis: Annualized Volatility, 20-Day Rolling Vol, and Realized Volatility.
-Moving Averages: Golden/Death Cross detection using 20, 50, and 200-day windows.
-Statistical Moments: Analysis of Skewness and Kurtosis in return distributions.
+# StreamlinedQuantitativeTradingSystem
 
-2. Machine Learning Ensemble
-The system trains three distinct models on 2 years of historical data to predict 5-day forward price action:
-Random Forest Classifier: For non-linear pattern recognition.
-LightGBM: For gradient-boosted decision tree efficiency.
-Gradient Boosting (SKLearn): To ensure robust statistical stability.
+A modular quantitative research and signal-generation framework combining classical technical analysis, machine learning ensembles, and large language model interpretation. Designed to transform raw market data into structured, decision-oriented intelligence.
 
-3. AI-Powered Insights
-Integrates with Google Gemini 2.0 Flash to interpret quantitative reports into plain-English investment theses, highlighting risks and suggesting portfolio allocations.
-🛠️ Installation & Setup
-Prerequisites
-Python 3.9 or higher
-A Google Gemini API Key
+## SystemOverview
 
-Installation
-Clone the Repository:
+The system integrates three analytical layers:
+1.Deterministic quantitative feature extraction  
+2.Supervised machine learning ensemble prediction  
+3.LLM-based interpretation and risk contextualization  
 
-Bash
-Plain text
-ANTLR4
-Bash
-C
-C#
-CSS
-CoffeeScript
-CMake
-Dart
-Django
-Docker
-EJS
-Erlang
-Git
-Go
-GraphQL
-Groovy
-HTML
-Java
-JavaScript
-JSON
-JSX
-Kotlin
-LaTeX
-Less
-Lua
-Makefile
-Markdown
-MATLAB
-Markup
-Objective-C
-Perl
-PHP
-PowerShell
-.properties
-Protocol Buffers
-Python
-R
-Ruby
-Sass (Sass)
-Sass (Scss)
-Scheme
-SQL
-Shell
-Swift
-SVG
-TSX
-TypeScript
-WebAssembly
-YAML
-XML
+The objective is not prediction in isolation, but probabilistic decision support with transparent inputs.
 
+## CoreFeatureEngine
+
+For each ticker,the engine computes 20 normalized quantitative features grouped into four domains.
+
+### MomentumAndTrend
+-RelativeStrengthIndex(RSI)  
+-MACDSignal  
+-5D,10D,20Dpricechange  
+
+### Volatility
+-AnnualizedVolatility  
+-20DRollingVolatility  
+-RealizedVolatility  
+
+### MovingAverages
+-20D,50D,200DSMA  
+-GoldenCrossDetection  
+-DeathCrossDetection  
+
+### StatisticalMoments
+-ReturnSkewness  
+-ReturnKurtosis  
+
+All features are computed on adjusted close prices and aligned to prevent lookahead bias.
+
+## MachineLearningEnsemble
+
+The system trains three independent classifiers on two years of historical data to predict 5-day forward direction.
+
+-RandomForestClassifier  
+-LightGBMClassifier  
+-GradientBoostingClassifier  
+
+Each model outputs a probability estimate.The final MLConfidence score is the mean ensemble probability,not a hard vote.
+
+Model training strictly respects chronological ordering.
+
+## CompositeScoringModel
+
+Each ticker receives a composite score from 0 to 100.
+
+|Weight|Component|Description|
+|---|---|---|
+|40%|TechnicalStrength|Momentum,trend,and moving-average alignment|
+|30%|RiskAdjustedReturns|Sharpe and Sortino ratios|
+|20%|QualityScore|ROE,DebtEquity,PE|
+|10%|MLConfidence|Ensemble bullish probability|
+
+### RecommendationScale
+-75+:STRONGBUY  
+-65–74:BUY  
+-50–64:HOLD  
+-40–49:SELL  
+-<40:STRONGSELL  
+
+## RiskMetrics
+
+Risk-adjusted performance is computed using standard formulations.
+
+### SharpeRatio
+$$Sharpe=\frac{R_p-R_f}{\sigma_p}$$
+
+### SortinoRatio
+$$Sortino=\frac{R_p-R_f}{\sigma_{down}}$$
+
+## LLMInsightsLayer
+
+The system integrates GoogleGemini2.0Flash to translate quantitative outputs into structured natural-language insights.
+
+Generated reports include:
+-Marketregimeinterpretation  
+-Keydriversandrisks  
+-Portfolioallocationconsiderations  
+
+The LLM does not generate signals.It interprets existing quantitative evidence.
+
+## Installation
+
+### Requirements
+-Python3.9+  
+-GoogleGeminiAPIKey  
+
+### Setup
+```bash
 git clone https://github.com/your-username/streamlined-quant-system.git
 cd streamlined-quant-system
-
-
-
-Install Dependencies:
-
-Bash
-Plain text
-ANTLR4
-Bash
-C
-C#
-CSS
-CoffeeScript
-CMake
-Dart
-Django
-Docker
-EJS
-Erlang
-Git
-Go
-GraphQL
-Groovy
-HTML
-Java
-JavaScript
-JSON
-JSX
-Kotlin
-LaTeX
-Less
-Lua
-Makefile
-Markdown
-MATLAB
-Markup
-Objective-C
-Perl
-PHP
-PowerShell
-.properties
-Protocol Buffers
-Python
-R
-Ruby
-Sass (Sass)
-Sass (Scss)
-Scheme
-SQL
-Shell
-Swift
-SVG
-TSX
-TypeScript
-WebAssembly
-YAML
-XML
-
 pip install yfinance pandas numpy scikit-learn lightgbm colorama python-dotenv google-genai
-
-
-
-Create a .env file in the root folder:
-
-Fragment kodu
-Plain text
-ANTLR4
-Bash
-C
-C#
-CSS
-CoffeeScript
-CMake
-Dart
-Django
-Docker
-EJS
-Erlang
-Git
-Go
-GraphQL
-Groovy
-HTML
-Java
-JavaScript
-JSON
-JSX
-Kotlin
-LaTeX
-Less
-Lua
-Makefile
-Markdown
-MATLAB
-Markup
-Objective-C
-Perl
-PHP
-PowerShell
-.properties
-Protocol Buffers
-Python
-R
-Ruby
-Sass (Sass)
-Sass (Scss)
-Scheme
-SQL
-Shell
-Swift
-SVG
-TSX
-TypeScript
-WebAssembly
-YAML
-XML
-
-GEMINI_API_KEY=your_api_key_here
-
-
-
-📖 Usage Guide
-Launching Interactive Mode
-Bash
-Plain text
-ANTLR4
-Bash
-C
-C#
-CSS
-CoffeeScript
-CMake
-Dart
-Django
-Docker
-EJS
-Erlang
-Git
-Go
-GraphQL
-Groovy
-HTML
-Java
-JavaScript
-JSON
-JSX
-Kotlin
-LaTeX
-Less
-Lua
-Makefile
-Markdown
-MATLAB
-Markup
-Objective-C
-Perl
-PHP
-PowerShell
-.properties
-Protocol Buffers
-Python
-R
-Ruby
-Sass (Sass)
-Sass (Scss)
-Scheme
-SQL
-Shell
-Swift
-SVG
-TSX
-TypeScript
-WebAssembly
-YAML
-XML
-
-python streamlined_quant_system.py
-
-
-
-Common Commands
-analyze AAPL NVDA TSLA: Deep-dive analysis of specific tickers.
-compare AAPL MSFT: Side-by-side quantitative comparison.
-insights: Generates an AI-powered narrative of your current watch list.
-export: Saves all processed metrics to analysis_results.csv.
-
-⚖️ The Composite Scoring Model
-The recommendation engine uses a weighted model to generate a score from 0-100:
-WeightCategoryDescription40%Technical StrengthBased on Momentum Score (RSI, MACD, MA).30%Risk-Adjusted ReturnsDriven by Sharpe Ratio performance.20%Quality ScoreFundamental health (ROE, Debt/Equity, P/E).10%ML ConfidenceProbability of bullish movement from the ensemble.
-Recommendation Scale
-75+: 🟢 STRONG BUY
-65-74: 🟢 BUY
-50-64: 🟡 HOLD
-40-49: 🔴 SELL
-< 40: 🔴 STRONG SELL
-
-🧪 Mathematical Indicators
-The system calculates risk-adjusted performance using standard quantitative formulas:
-Sharpe Ratio
-
-
-$$Sharpe = \frac{R_p - R_f}{\sigma_p}$$
-Sortino Ratio
-
-
-$$Sortino = \frac{R_p - R_f}{\sigma_{down}}$$
-⚠️ Disclaimer
-For Research Purposes Only. Quantitative trading involves significant risk. The "Recommendations" provided by this system are generated by algorithms and should not be considered financial advice. Always perform your own due diligence.
-
