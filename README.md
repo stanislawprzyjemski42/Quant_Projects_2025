@@ -1,4 +1,4 @@
-# Quantitative Systems & Computational Logic (2025) 🚀
+# Quantitative Systems & Computational Logic (2025) 
 
 Welcome — this repository is a personal collection of some quantitative finance projects and experiments built between May and December 2025 made in January mainly to showcase my quant projects.  
 
@@ -7,7 +7,7 @@ This repo showcases my projects; it’s educational and experimental, not produc
 
 ---
 
-## Quick navigation ✨
+## Quick navigation 
 
 - Overview
 - Files & what they do
@@ -20,7 +20,7 @@ This repo showcases my projects; it’s educational and experimental, not produc
 
 ---
 
-## Short overview 🧭
+## Short overview 
 
 This repository contains exploratory and educational implementations in Python and C++ focused on:
 - quantitative feature engineering,
@@ -57,13 +57,13 @@ All files present in this repo and short descriptions:
 - `_cpp_option_pricer.cpp`  
   Additional C++ testing/pricing harness — used to explore performance and input validation.
 
-- `README.md` — this file 📘
+- `README.md` — this file 
 
 > Note: data/ and results/ may be present for sample CSVs or outputs (if included).
 
 ---
 
-## Setup & requirements ✅
+## Setup & requirements 
 
 Recommended environment:
 - Python 3.8+ (3.10+ recommended)
@@ -134,7 +134,7 @@ Most scripts print usage or help when run with `-h` or without required argument
 
 ---
 
-## Data & environment notes 🗂️
+## Data & environment notes 
 
 - By default Python scripts use `yfinance` to fetch historical data. You can adapt ingestion to local CSVs if preferred. In some projects FRED and AphaVantage API keys are used to get open source economic data to improve the AI systems market data contex.
 - Optional LLM insights: set `GEMINI_API_KEY` (or relevant API key) in a `.env` file or environment variable to enable Gemini/LLM integration:
@@ -163,7 +163,7 @@ I used many tutorials, community resources, and open-source examples while build
 
 ---
 
-## Style, testing & contribution notes 🛠️
+## Style, testing & contribution notes 
 
 - Design principles: separation of concerns, defensive programming, reproducibility, and readability.
 - Tests: add unit/regression tests (pytest suggested) before trusting outputs for anything critical.
