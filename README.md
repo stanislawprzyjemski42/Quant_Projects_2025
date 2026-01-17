@@ -185,7 +185,7 @@ Contribution workflow (recommended):
 
 ## License & reuse ⚖️
 
-This repository is released under the MIT License. You are free to use the code for learning and experimentation. Please respect the licenses of any third-party libraries or resources used. For explicit permission for broader reuse, refer to the MIT License or contact the repository owner.
+This repository is released under the MIT License. You are free to use the code for learning and experimentation. Please respect the licenses of any third-party libraries or resources used. For explicit permission for broader reuse, refer to the MIT License.
 
 ---
 
