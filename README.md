@@ -159,7 +159,12 @@ Short legal clarity: It does not guarantee profits, returns, or accuracy — use
 
 ## Acknowledgements & references 
 
-I used many tutorials, community resources, and open-source examples while building these projects (notably Quantecon and other community tutorials and docs). I acknowledge that those materials were important in helping me create these projects. I accept the use of those resources as background and have adapted the ideas into original code here; nothing in this repo is intended to misrepresent others' work. This is an acknowledgement of influence rather than a request for thanks — please consider the original resources for license and reuse terms if you plan to copy their material directly.
+I used many tutorials, community resources, and open-source examples while building these projects (notably Quantecon and other community tutorials and docs). I used GitHub Co-Pilot to debug most of my code mostly in projects that were 500+ lines of code.
+Some of the Youtube tutorials used:
+-Quant Finance with Python and Pandas: https://www.youtube.com/watch?v=b9RgHa1CnH4
+-Algorithmic Trading – Machine Learning & Quant Strategies Course with Python: https://www.youtube.com/watch?v=9Y3yaoi9rUQ
+-C++ Code for calculating Black Scholes Merton Greeks in Google Colab: https://www.youtube.com/watch?v=4uUosg1h6VM
+-How to Build a Good Quant Finance Project: https://www.youtube.com/watch?v=tTU_RezPqIk
 
 ---
 
